@@ -141,6 +141,9 @@
                         },
                         {
                           "key": "primaryColumns.stato.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.persona.computedValue"
                         }
                       ],
                       "leftColumn": 1,
@@ -187,7 +190,8 @@
                         "corso",
                         "nome",
                         "cognome",
-                        "stato"
+                        "stato",
+                        "persona"
                       ],
                       "dynamicPropertyPathList": [],
                       "displayName": "Table",
@@ -309,6 +313,30 @@
                           "isDiscardVisible": true,
                           "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"stato\"]))}}",
                           "cellBackground": ""
+                        },
+                        "persona": {
+                          "allowCellWrapping": false,
+                          "index": 4,
+                          "width": 150,
+                          "originalId": "persona",
+                          "id": "persona",
+                          "alias": "persona",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "persona",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"persona\"]))}}"
                         }
                       },
                       "key": "53fvn9jvlb",
