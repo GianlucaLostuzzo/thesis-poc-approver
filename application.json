@@ -19,7 +19,7 @@
     "type": "FLUID"
   },
   "publishedAppLayout": {
-    "type": "TABLET_LARGE"
+    "type": "FLUID"
   },
   "evaluationVersion": 2,
   "applicationVersion": 2,
