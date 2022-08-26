@@ -444,10 +444,10 @@
                       "isCanvas": false,
                       "dynamicPropertyPathList": [
                         {
-                          "key": "groupButtons.groupButton2.onClick"
+                          "key": "groupButtons.groupButton3.onClick"
                         },
                         {
-                          "key": "groupButtons.groupButton3.onClick"
+                          "key": "groupButtons.groupButton2.onClick"
                         }
                       ],
                       "displayName": "Button Group",
@@ -472,7 +472,7 @@
                           "index": 0,
                           "menuItems": {},
                           "buttonColor": "#1e40af",
-                          "onClick": "{{ApprovaRichiesta.run(() => showAlert('Richiesta approvata!','success'), () => {});\nMailApprovazioneRichiesta.run()}}"
+                          "onClick": "{{ApprovaRichiesta.run(() => showAlert('Richiesta approvata!','success'), () => {});\nMailApprovazioneRichiesta.run();\nPendenti.run()}}"
                         },
                         "groupButton3": {
                           "label": "Rifiuta",
@@ -501,7 +501,7 @@
                             }
                           },
                           "buttonColor": "#dc2626",
-                          "onClick": "{{RifiutaRichiesta.run(() => showAlert('Richiesta rifiutata','success'), () => {});\nMailRifiutoRichiesta.run()}}"
+                          "onClick": "{{RifiutaRichiesta.run(() => showAlert('Richiesta rifiutata','success'), () => {});\nMailRifiutoRichiesta.run();\nPendenti.run()}}"
                         }
                       },
                       "type": "BUTTON_GROUP_WIDGET",
@@ -587,6 +587,16 @@
             }
           ],
           [
+            {
+              "id": "Approvazioni_Dati_corso",
+              "name": "Dati_corso",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "Table1.selectedRow.idcorso"
+              ],
+              "timeoutInMillisecond": 10000
+            },
             {
               "id": "Approvazioni_MailUtente",
               "name": "MailUtente",
