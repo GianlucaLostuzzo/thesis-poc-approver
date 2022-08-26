@@ -43,6 +43,7 @@
               "parentRowSpace": 10,
               "type": "CONTAINER_WIDGET",
               "hideCard": false,
+              "shouldScrollContents": true,
               "animateLoading": true,
               "parentColumnSpace": 12.5625,
               "leftColumn": 2,
@@ -60,7 +61,7 @@
                   "widgetName": "Canvas1",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 430,
+                  "bottomRow": 460,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": false,
@@ -77,6 +78,176 @@
                     }
                   ],
                   "children": [
+                    {
+                      "tabId": "",
+                      "boxShadow": "NONE",
+                      "widgetName": "Container2",
+                      "borderColor": "transparent",
+                      "isCanvas": true,
+                      "displayName": "Container",
+                      "iconSVG": "/static/media/icon.1977dca3370505e2db3a8e44cfd54907.svg",
+                      "searchTags": [
+                        "div",
+                        "parent",
+                        "group"
+                      ],
+                      "topRow": 38,
+                      "bottomRow": 44,
+                      "parentRowSpace": 10,
+                      "type": "CONTAINER_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 5.732421875,
+                      "leftColumn": 35,
+                      "children": [
+                        {
+                          "rightColumn": 366.875,
+                          "widgetName": "Canvas2",
+                          "detachFromLayout": true,
+                          "widgetId": "4dnfknyurr",
+                          "containerStyle": "none",
+                          "bottomRow": 60,
+                          "topRow": 0,
+                          "parentRowSpace": 1,
+                          "isVisible": true,
+                          "type": "CANVAS_WIDGET",
+                          "canExtend": false,
+                          "version": 1,
+                          "parentId": "vsac7r1qut",
+                          "props": {
+                            "containerStyle": "none",
+                            "canExtend": false,
+                            "detachFromLayout": true,
+                            "children": []
+                          },
+                          "isLoading": false,
+                          "minHeight": 45.859375,
+                          "renderMode": "CANVAS",
+                          "parentColumnSpace": 1,
+                          "leftColumn": 0,
+                          "children": [
+                            {
+                              "resetFormOnClick": false,
+                              "boxShadow": "none",
+                              "widgetName": "Button1",
+                              "onClick": "{{ApprovaRichiesta.run(() => showAlert('Richiesta approvata!','success'), () => {});\nMailApprovazioneRichiesta.run();\nPendenti.run()}}",
+                              "buttonColor": "#312e81",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "onClick"
+                                }
+                              ],
+                              "displayName": "Button",
+                              "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
+                              "searchTags": [
+                                "click",
+                                "submit"
+                              ],
+                              "topRow": 0,
+                              "bottomRow": 4,
+                              "parentRowSpace": 10,
+                              "type": "BUTTON_WIDGET",
+                              "hideCard": false,
+                              "animateLoading": true,
+                              "parentColumnSpace": 5.732421875,
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "onClick"
+                                }
+                              ],
+                              "leftColumn": 43,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "borderRadius"
+                                }
+                              ],
+                              "text": "Approva",
+                              "isDisabled": false,
+                              "key": "ty0b4y74k4",
+                              "isDeprecated": false,
+                              "rightColumn": 64,
+                              "isDefaultClickDisabled": true,
+                              "widgetId": "x7e1mciyoi",
+                              "isVisible": true,
+                              "recaptchaType": "V3",
+                              "version": 1,
+                              "parentId": "4dnfknyurr",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "disabledWhenInvalid": false,
+                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "buttonVariant": "PRIMARY",
+                              "placement": "CENTER"
+                            },
+                            {
+                              "resetFormOnClick": false,
+                              "boxShadow": "none",
+                              "widgetName": "Button2",
+                              "onClick": "{{RifiutaRichiesta.run(() => showAlert('Richiesta rifiutata','success'), () => {});\nMailRifiutoRichiesta.run();\nPendenti.run()}}",
+                              "buttonColor": "#312e81",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "onClick"
+                                }
+                              ],
+                              "displayName": "Button",
+                              "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
+                              "searchTags": [
+                                "click",
+                                "submit"
+                              ],
+                              "topRow": 0,
+                              "bottomRow": 4,
+                              "parentRowSpace": 10,
+                              "type": "BUTTON_WIDGET",
+                              "hideCard": false,
+                              "animateLoading": true,
+                              "parentColumnSpace": 5.732421875,
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "onClick"
+                                }
+                              ],
+                              "leftColumn": 22,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "borderRadius"
+                                }
+                              ],
+                              "text": "Rifiuta",
+                              "isDisabled": false,
+                              "key": "ty0b4y74k4",
+                              "isDeprecated": false,
+                              "rightColumn": 43,
+                              "isDefaultClickDisabled": true,
+                              "widgetId": "h9n50azc2b",
+                              "isVisible": true,
+                              "recaptchaType": "V3",
+                              "version": 1,
+                              "parentId": "4dnfknyurr",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "disabledWhenInvalid": false,
+                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "buttonVariant": "SECONDARY",
+                              "placement": "CENTER"
+                            }
+                          ]
+                        }
+                      ],
+                      "borderWidth": "0",
+                      "key": "s9bnto6iz0",
+                      "backgroundColor": "#FFFFFF",
+                      "isDeprecated": false,
+                      "rightColumn": 63,
+                      "widgetId": "vsac7r1qut",
+                      "containerStyle": "card",
+                      "isVisible": true,
+                      "version": 1,
+                      "parentId": "7bvhsyf12s",
+                      "renderMode": "CANVAS",
+                      "isLoading": false
+                    },
                     {
                       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
                       "multiRowSelection": false,
@@ -437,111 +608,6 @@
                       "isLoading": false,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "fontSize": "1.25rem"
-                    },
-                    {
-                      "boxShadow": "none",
-                      "widgetName": "ButtonGroup1",
-                      "isCanvas": false,
-                      "dynamicPropertyPathList": [
-                        {
-                          "key": "groupButtons.groupButton3.onClick"
-                        },
-                        {
-                          "key": "groupButtons.groupButton2.onClick"
-                        }
-                      ],
-                      "displayName": "Button Group",
-                      "iconSVG": "/static/media/icon.d6773218cfb61dcfa5f460d43371e30d.svg",
-                      "searchTags": [
-                        "click",
-                        "submit"
-                      ],
-                      "topRow": 37,
-                      "bottomRow": 41,
-                      "parentRowSpace": 10,
-                      "groupButtons": {
-                        "groupButton2": {
-                          "label": "Approva",
-                          "iconName": "add",
-                          "id": "groupButton2",
-                          "buttonType": "SIMPLE",
-                          "placement": "CENTER",
-                          "widgetId": "",
-                          "isVisible": true,
-                          "isDisabled": false,
-                          "index": 0,
-                          "menuItems": {},
-                          "buttonColor": "#1e40af",
-                          "onClick": "{{ApprovaRichiesta.run(() => showAlert('Richiesta approvata!','success'), () => {});\nMailApprovazioneRichiesta.run();\nPendenti.run()}}"
-                        },
-                        "groupButton3": {
-                          "label": "Rifiuta",
-                          "iconName": "delete",
-                          "id": "groupButton3",
-                          "buttonType": "SIMPLE",
-                          "placement": "CENTER",
-                          "widgetId": "",
-                          "isVisible": true,
-                          "isDisabled": false,
-                          "index": 1,
-                          "menuItems": {
-                            "menuItem3": {
-                              "label": "Delete",
-                              "iconName": "trash",
-                              "iconColor": "#FFFFFF",
-                              "iconAlign": "right",
-                              "textColor": "#FFFFFF",
-                              "backgroundColor": "#DD4B34",
-                              "id": "menuItem3",
-                              "widgetId": "",
-                              "onClick": "",
-                              "isVisible": true,
-                              "isDisabled": false,
-                              "index": 0
-                            }
-                          },
-                          "buttonColor": "#dc2626",
-                          "onClick": "{{RifiutaRichiesta.run(() => showAlert('Richiesta rifiutata','success'), () => {});\nMailRifiutoRichiesta.run();\nPendenti.run()}}"
-                        }
-                      },
-                      "type": "BUTTON_GROUP_WIDGET",
-                      "hideCard": false,
-                      "animateLoading": true,
-                      "parentColumnSpace": 11.46484375,
-                      "dynamicTriggerPathList": [
-                        {
-                          "key": "groupButtons.groupButton3.onClick"
-                        },
-                        {
-                          "key": "groupButtons.groupButton2.onClick"
-                        }
-                      ],
-                      "leftColumn": 13,
-                      "dynamicBindingPathList": [
-                        {
-                          "key": "borderRadius"
-                        },
-                        {
-                          "key": "childStylesheet.button.buttonColor"
-                        }
-                      ],
-                      "key": "qh1t7xmta0",
-                      "orientation": "horizontal",
-                      "isDeprecated": false,
-                      "rightColumn": 50,
-                      "widgetId": "w5macruywb",
-                      "isVisible": true,
-                      "version": 1,
-                      "parentId": "7bvhsyf12s",
-                      "renderMode": "CANVAS",
-                      "isLoading": false,
-                      "childStylesheet": {
-                        "button": {
-                          "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
-                        }
-                      },
-                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "buttonVariant": "PRIMARY"
                     }
                   ],
                   "key": "l3mvmzrjqo",

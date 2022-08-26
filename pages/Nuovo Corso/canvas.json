@@ -126,8 +126,8 @@
                               "resetFormOnClick": true,
                               "boxShadow": "none",
                               "widgetName": "Button1",
-                              "onClick": "{{Insert.run(() => showAlert('Inserito con successo!','success'), () => {});\nnavigateTo('Nuovo Corso')}}",
-                              "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                              "onClick": "{{Insert.run(() => showAlert('Inserito con successo!','success'), () => {});\nresetWidget(\"Form1\",true)}}",
+                              "buttonColor": "#312e81",
                               "dynamicPropertyPathList": [
                                 {
                                   "key": "onClick"
@@ -153,9 +153,6 @@
                               ],
                               "leftColumn": 32,
                               "dynamicBindingPathList": [
-                                {
-                                  "key": "buttonColor"
-                                },
                                 {
                                   "key": "borderRadius"
                                 }
@@ -183,7 +180,12 @@
                               "boxShadow": "none",
                               "widgetName": "Button2",
                               "onClick": "{{resetWidget(\"Form1\",true)}}",
-                              "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                              "buttonColor": "#312e81",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "onClick"
+                                }
+                              ],
                               "displayName": "Button",
                               "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
                               "searchTags": [
@@ -204,9 +206,6 @@
                               ],
                               "leftColumn": 0,
                               "dynamicBindingPathList": [
-                                {
-                                  "key": "buttonColor"
-                                },
                                 {
                                   "key": "borderRadius"
                                 }
