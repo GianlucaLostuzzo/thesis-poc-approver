@@ -197,7 +197,11 @@
                         "persona",
                         "idcorso"
                       ],
-                      "dynamicPropertyPathList": [],
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "onRowSelected"
+                        }
+                      ],
                       "displayName": "Table",
                       "bottomRow": 34,
                       "columnWidthMap": {
@@ -373,7 +377,7 @@
                           "cellBackground": ""
                         }
                       },
-                      "onRowSelected": "{{MailUtente.run()}}",
+                      "onRowSelected": "{{MailUtente.run();\nDati_corso.run()}}",
                       "key": "53fvn9jvlb",
                       "isDeprecated": false,
                       "rightColumn": 63,
