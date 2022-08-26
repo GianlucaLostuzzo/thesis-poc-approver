@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "Pendenti",
+    "name": "Dati_corso",
     "datasource": {
       "name": "CorsiFormazione",
       "pluginId": "postgres-plugin",
@@ -18,25 +18,31 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT Corsi.Nome AS Corso, Utenti.Nome, Utenti.Cognome, Iscrizioni.Stato, Iscrizioni.Persona, Iscrizioni.Corso as idcorso\nFROM Iscrizioni \n\tJOIN Utenti on Iscrizioni.Persona = Utenti.idutente\n\tJOIN Corsi on Iscrizioni.Corso = Corsi.idCorso\nWHERE Iscrizioni.Stato = 'Pendente';",
+      "body": "SELECT * FROM corsi where idcorso = {{Table1.selectedRow.idcorso}};",
       "pluginSpecifiedTemplates": [
         {
           "value": false
         }
       ]
     },
-    "executeOnLoad": true,
-    "dynamicBindingPathList": [],
+    "executeOnLoad": false,
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [],
+    "jsonPathKeys": [
+      "Table1.selectedRow.idcorso"
+    ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Approvazioni_Pendenti",
+  "id": "Approvazioni_Dati_corso",
   "deleted": false,
-  "gitSyncId": "62fcad8a5960e1776bd8692b_62fcad8b5960e1776bd86955"
+  "gitSyncId": "62fcb4685960e1776bd869b6_63086c6f5591f649865ff2e5"
 }

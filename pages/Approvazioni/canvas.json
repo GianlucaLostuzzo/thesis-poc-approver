@@ -79,7 +79,7 @@
                   "children": [
                     {
                       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-                      "multiRowSelection": true,
+                      "multiRowSelection": false,
                       "isVisibleDownload": true,
                       "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
                       "topRow": 9,
@@ -144,6 +144,9 @@
                         },
                         {
                           "key": "primaryColumns.persona.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.idcorso.computedValue"
                         }
                       ],
                       "leftColumn": 1,
@@ -191,7 +194,8 @@
                         "nome",
                         "cognome",
                         "stato",
-                        "persona"
+                        "persona",
+                        "idcorso"
                       ],
                       "dynamicPropertyPathList": [],
                       "displayName": "Table",
@@ -208,7 +212,11 @@
                       },
                       "parentRowSpace": 10,
                       "hideCard": false,
-                      "dynamicTriggerPathList": [],
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onRowSelected"
+                        }
+                      ],
                       "primaryColumns": {
                         "corso": {
                           "allowCellWrapping": false,
@@ -337,8 +345,35 @@
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
                           "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"persona\"]))}}"
+                        },
+                        "idcorso": {
+                          "allowCellWrapping": false,
+                          "index": 5,
+                          "width": 150,
+                          "originalId": "idcorso",
+                          "id": "idcorso",
+                          "alias": "idcorso",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": false,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "idcorso",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"idcorso\"]))}}",
+                          "cellBackground": ""
                         }
                       },
+                      "onRowSelected": "{{MailUtente.run()}}",
                       "key": "53fvn9jvlb",
                       "isDeprecated": false,
                       "rightColumn": 63,
@@ -403,6 +438,11 @@
                       "boxShadow": "none",
                       "widgetName": "ButtonGroup1",
                       "isCanvas": false,
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "groupButtons.groupButton2.onClick"
+                        }
+                      ],
                       "displayName": "Button Group",
                       "iconSVG": "/static/media/icon.d6773218cfb61dcfa5f460d43371e30d.svg",
                       "searchTags": [
@@ -425,7 +465,7 @@
                           "index": 0,
                           "menuItems": {},
                           "buttonColor": "#1e40af",
-                          "onClick": "{{ApprovaRichiesta.run()}}"
+                          "onClick": "{{ApprovaRichiesta.run(() => showAlert('Richiesta approvata!','success'), () => {});\nMailApprovazioneRichiesta.run()}}"
                         },
                         "groupButton3": {
                           "label": "Rifiuta",
@@ -536,6 +576,18 @@
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Approvazioni_MailUtente",
+              "name": "MailUtente",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "Table1.selectedRow.persona"
+              ],
               "timeoutInMillisecond": 10000
             }
           ]
