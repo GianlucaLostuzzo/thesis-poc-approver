@@ -441,6 +441,9 @@
                       "dynamicPropertyPathList": [
                         {
                           "key": "groupButtons.groupButton2.onClick"
+                        },
+                        {
+                          "key": "groupButtons.groupButton3.onClick"
                         }
                       ],
                       "displayName": "Button Group",
@@ -494,7 +497,7 @@
                             }
                           },
                           "buttonColor": "#dc2626",
-                          "onClick": "{{RifiutaRichiesta.run(() => {}, () => {})}}"
+                          "onClick": "{{RifiutaRichiesta.run(() => showAlert('Richiesta rifiutata','success'), () => {});\nMailRifiutoRichiesta.run()}}"
                         }
                       },
                       "type": "BUTTON_GROUP_WIDGET",
