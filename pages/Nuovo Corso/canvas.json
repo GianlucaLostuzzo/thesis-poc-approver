@@ -126,8 +126,13 @@
                               "resetFormOnClick": true,
                               "boxShadow": "none",
                               "widgetName": "Button1",
-                              "onClick": "{{Insert.run(() => showAlert('Inserito con successo!'), () => {})}}",
+                              "onClick": "{{Insert.run(() => showAlert('Inserito con successo!','success'), () => {});\nnavigateTo('Nuovo Corso')}}",
                               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "onClick"
+                                }
+                              ],
                               "displayName": "Button",
                               "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
                               "searchTags": [
@@ -155,7 +160,7 @@
                                   "key": "borderRadius"
                                 }
                               ],
-                              "text": "Submit",
+                              "text": "Inserisci",
                               "isDisabled": false,
                               "key": "oszgn96bsn",
                               "isDeprecated": false,
@@ -177,6 +182,7 @@
                               "resetFormOnClick": true,
                               "boxShadow": "none",
                               "widgetName": "Button2",
+                              "onClick": "{{resetWidget(\"Form1\",true)}}",
                               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                               "displayName": "Button",
                               "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
@@ -191,6 +197,11 @@
                               "hideCard": false,
                               "animateLoading": true,
                               "parentColumnSpace": 4.01318359375,
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "onClick"
+                                }
+                              ],
                               "leftColumn": 0,
                               "dynamicBindingPathList": [
                                 {
