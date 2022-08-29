@@ -251,7 +251,7 @@
                     {
                       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
                       "multiRowSelection": false,
-                      "isVisibleDownload": true,
+                      "isVisibleDownload": false,
                       "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
                       "topRow": 9,
                       "isSortable": true,
@@ -379,10 +379,10 @@
                         "task": 245,
                         "step": 62,
                         "status": 75,
-                        "nome": 79,
-                        "corso": 163,
-                        "cognome": 85,
-                        "stato": 124,
+                        "nome": 156,
+                        "corso": 239,
+                        "cognome": 162,
+                        "stato": 154,
                         "customColumn1": 96
                       },
                       "parentRowSpace": 10,
@@ -510,7 +510,7 @@
                           "textSize": "0.875rem",
                           "enableFilter": true,
                           "enableSort": true,
-                          "isVisible": true,
+                          "isVisible": false,
                           "isDisabled": false,
                           "isCellEditable": false,
                           "isEditable": false,
@@ -561,7 +561,7 @@
                       "renderMode": "CANVAS",
                       "horizontalAlignment": "LEFT",
                       "isVisibleSearch": true,
-                      "isVisiblePagination": true,
+                      "isVisiblePagination": false,
                       "verticalAlignment": "CENTER"
                     },
                     {

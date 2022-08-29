@@ -42,7 +42,7 @@
               "shouldScrollContents": true,
               "animateLoading": true,
               "parentColumnSpace": 20.0625,
-              "leftColumn": 13,
+              "leftColumn": 10,
               "dynamicBindingPathList": [
                 {
                   "key": "borderRadius"
@@ -850,7 +850,7 @@
               "key": "pcqvdc02th",
               "backgroundColor": "#FFFFFF",
               "isDeprecated": false,
-              "rightColumn": 52,
+              "rightColumn": 55,
               "widgetId": "z9xcrq72r8",
               "isVisible": true,
               "parentId": "0",
