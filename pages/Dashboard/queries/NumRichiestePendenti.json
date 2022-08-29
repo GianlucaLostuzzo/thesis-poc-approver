@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "TotRichieste",
+    "name": "NumRichiestePendenti",
     "datasource": {
       "name": "CorsiFormazione",
       "pluginId": "postgres-plugin",
@@ -13,19 +13,19 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Approvazioni",
+    "pageId": "Dashboard",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT COUNT (Corso) FROM Iscrizioni;",
+      "body": "SELECT COUNT (Corso) FROM Iscrizioni WHERE Stato = 'Pendente';",
       "pluginSpecifiedTemplates": [
         {
-          "value": true
+          "value": false
         }
       ]
     },
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
@@ -36,7 +36,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Approvazioni_TotRichieste",
+  "id": "Dashboard_NumRichiestePendenti",
   "deleted": false,
-  "gitSyncId": "62fcad8a5960e1776bd8692b_62fcad8b5960e1776bd8694d"
+  "gitSyncId": "62fcad8a5960e1776bd8692b_62fcad8b5960e1776bd8694b"
 }

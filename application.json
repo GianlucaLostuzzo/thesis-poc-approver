@@ -2,11 +2,15 @@
   "pages": [
     {
       "id": "Approvazioni",
-      "isDefault": true
+      "isDefault": false
     },
     {
       "id": "Nuovo Corso",
       "isDefault": false
+    },
+    {
+      "id": "Dashboard",
+      "isDefault": true
     }
   ],
   "viewMode": false,
