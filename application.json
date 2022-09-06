@@ -1,16 +1,20 @@
 {
   "pages": [
     {
+      "id": "Dashboard",
+      "isDefault": true
+    },
+    {
+      "id": "Gestione corsi",
+      "isDefault": false
+    },
+    {
       "id": "Approvazioni",
       "isDefault": false
     },
     {
       "id": "Nuovo Corso",
       "isDefault": false
-    },
-    {
-      "id": "Dashboard",
-      "isDefault": true
     }
   ],
   "viewMode": false,

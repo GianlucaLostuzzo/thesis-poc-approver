@@ -198,7 +198,7 @@
                                   "widgetName": "Canvas2Copy",
                                   "displayName": "Canvas",
                                   "topRow": 0,
-                                  "bottomRow": 140,
+                                  "bottomRow": 160,
                                   "parentRowSpace": 1,
                                   "type": "CANVAS_WIDGET",
                                   "canExtend": false,
@@ -305,50 +305,6 @@
                                       "isLoading": false,
                                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                                       "fontSize": "1.5rem"
-                                    },
-                                    {
-                                      "widgetName": "Text4Copy",
-                                      "displayName": "Text",
-                                      "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
-                                      "searchTags": [
-                                        "typography",
-                                        "paragraph",
-                                        "label"
-                                      ],
-                                      "topRow": 8,
-                                      "bottomRow": 12,
-                                      "type": "TEXT_WIDGET",
-                                      "hideCard": false,
-                                      "animateLoading": true,
-                                      "overflow": "NONE",
-                                      "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-                                      "dynamicTriggerPathList": [],
-                                      "leftColumn": 1,
-                                      "dynamicBindingPathList": [
-                                        {
-                                          "key": "fontFamily"
-                                        },
-                                        {
-                                          "key": "borderRadius"
-                                        }
-                                      ],
-                                      "shouldTruncate": false,
-                                      "truncateButtonColor": "#FFC13D",
-                                      "text": "testo editabile",
-                                      "key": "d953bvw2v9",
-                                      "isDeprecated": false,
-                                      "rightColumn": 37,
-                                      "textAlign": "LEFT",
-                                      "widgetId": "tpwj0bipxh",
-                                      "isVisible": true,
-                                      "fontStyle": "BOLD",
-                                      "textColor": "#03B365",
-                                      "version": 1,
-                                      "parentId": "z1nrkb540m",
-                                      "renderMode": "CANVAS",
-                                      "isLoading": false,
-                                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                                      "fontSize": "0.75rem"
                                     }
                                   ],
                                   "key": "55u7fu5o8w",
@@ -517,7 +473,7 @@
                                   "widgetName": "Canvas3",
                                   "displayName": "Canvas",
                                   "topRow": 0,
-                                  "bottomRow": 140,
+                                  "bottomRow": 160,
                                   "parentRowSpace": 1,
                                   "type": "CANVAS_WIDGET",
                                   "canExtend": false,
@@ -624,50 +580,6 @@
                                       "isLoading": false,
                                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                                       "fontSize": "1.5rem"
-                                    },
-                                    {
-                                      "widgetName": "Text7",
-                                      "displayName": "Text",
-                                      "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
-                                      "searchTags": [
-                                        "typography",
-                                        "paragraph",
-                                        "label"
-                                      ],
-                                      "topRow": 8,
-                                      "bottomRow": 12,
-                                      "type": "TEXT_WIDGET",
-                                      "hideCard": false,
-                                      "animateLoading": true,
-                                      "overflow": "NONE",
-                                      "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-                                      "dynamicTriggerPathList": [],
-                                      "leftColumn": 1,
-                                      "dynamicBindingPathList": [
-                                        {
-                                          "key": "fontFamily"
-                                        },
-                                        {
-                                          "key": "borderRadius"
-                                        }
-                                      ],
-                                      "shouldTruncate": false,
-                                      "truncateButtonColor": "#FFC13D",
-                                      "text": "testo editabile",
-                                      "key": "d953bvw2v9",
-                                      "isDeprecated": false,
-                                      "rightColumn": 37,
-                                      "textAlign": "LEFT",
-                                      "widgetId": "wd9esl9uij",
-                                      "isVisible": true,
-                                      "fontStyle": "BOLD",
-                                      "textColor": "#03B365",
-                                      "version": 1,
-                                      "parentId": "82tl0lef7b",
-                                      "renderMode": "CANVAS",
-                                      "isLoading": false,
-                                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                                      "fontSize": "0.75rem"
                                     }
                                   ],
                                   "key": "55u7fu5o8w",
@@ -856,11 +768,14 @@
                                         },
                                         {
                                           "key": "borderRadius"
+                                        },
+                                        {
+                                          "key": "text"
                                         }
                                       ],
                                       "shouldTruncate": false,
                                       "truncateButtonColor": "#FFC13D",
-                                      "text": "testo editabile",
+                                      "text": "Su {{Query1.data[0].count}} totali a sistema",
                                       "key": "d953bvw2v9",
                                       "isDeprecated": false,
                                       "rightColumn": 37,
@@ -1003,6 +918,14 @@
             {
               "id": "Dashboard_NumRichiestePendenti",
               "name": "NumRichiestePendenti",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Dashboard_Query1",
+              "name": "Query1",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
