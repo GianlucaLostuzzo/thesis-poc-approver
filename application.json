@@ -5,11 +5,11 @@
       "isDefault": true
     },
     {
-      "id": "Gestione corsi",
+      "id": "Approvazioni",
       "isDefault": false
     },
     {
-      "id": "Approvazioni",
+      "id": "Gestione Corsi",
       "isDefault": false
     },
     {
