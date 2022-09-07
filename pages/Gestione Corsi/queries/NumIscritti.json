@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "Mail_iscritti",
+    "name": "NumIscritti",
     "datasource": {
       "name": "CorsiFormazione",
       "pluginId": "postgres-plugin",
@@ -18,14 +18,14 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT mail\nFROM utenti\n\tJOIN iscrizioni on idutente = persona\nWHERE corso = {{data_table.selectedRow.idcorso}};",
+      "body": "select count(persona)\nfrom iscrizioni\nwhere corso = {{data_table.selectedRow.idcorso}} and Stato = 'Accettata';",
       "pluginSpecifiedTemplates": [
         {
           "value": false
         }
       ]
     },
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -42,7 +42,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Gestione Corsi_Mail_iscritti",
+  "id": "Gestione Corsi_NumIscritti",
   "deleted": false,
-  "gitSyncId": "62fcb4685960e1776bd869b6_63183fcae2a8275bfc372922"
+  "gitSyncId": "62fcb4685960e1776bd869b6_6318585de2a8275bfc372934"
 }
