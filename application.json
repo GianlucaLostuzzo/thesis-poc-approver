@@ -15,6 +15,10 @@
     {
       "id": "Nuovo Corso",
       "isDefault": false
+    },
+    {
+      "id": "Annulla corsi",
+      "isDefault": false
     }
   ],
   "viewMode": false,
