@@ -699,7 +699,7 @@
                             {
                               "boxShadow": "none",
                               "widgetName": "Delete_Button",
-                              "onClick": "{{DeleteQuery.run(() => showAlert('Corso annullato correttamente','warning'), () => showAlert('Non è stato possibile annullare il corso','error'));\nAnnullamentoCorso.run();\nSelectQuery.run();\n}}",
+                              "onClick": "{{DeleteQuery.run(() => showAlert('Corso annullato correttamente','warning'), () => showAlert('Non è stato possibile annullare il corso, contattare l amministratore','error'));\nAnnullamentoCorso.run();\nSelectQuery.run();\ncloseModal('Delete_Modal')\n}}",
                               "dynamicPropertyPathList": [
                                 {
                                   "key": "onClick"
