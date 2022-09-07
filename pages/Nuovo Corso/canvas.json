@@ -126,7 +126,7 @@
                               "resetFormOnClick": true,
                               "boxShadow": "none",
                               "widgetName": "Button1",
-                              "onClick": "{{Insert.run(() => showAlert('Inserito con successo!','success'), () => {});\nresetWidget(\"Form1\",true)}}",
+                              "onClick": "{{Insert.run(() => showAlert('Inserito con successo!','success'), () => showAlert('Controllare che i campi siano debitamente compilati','warning','warning','warning'))}}",
                               "buttonColor": "#312e81",
                               "dynamicPropertyPathList": [
                                 {
