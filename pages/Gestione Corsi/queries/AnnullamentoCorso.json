@@ -25,7 +25,7 @@
           "from": "testappsmith@gmail.com",
           "cc": "",
           "subject": "{{data_table.selectedRow.nome}}: Corso annullato",
-          "bcc": "{{\nfunction(){\n  var email = \"\";\n  for(let i=1; i < Mail_iscritti.data.length; i++)\n    {\n      email = email+Mail_iscritti.data[i].mail+\",\";\n    };\n  email = email.slice(0, -1);\nreturn email;\n}()\n}}",
+          "bcc": "{{function(){  var email = \"\";  for(let i=1; i < Mail_iscritti.data.length; i++)    {      email = email+Mail_iscritti.data[i].mail+\",\";    };  email = email.slice(0, -1);return email;}()}}",
           "to": "{{Mail_iscritti.data[0].mail}}"
         }
       }
@@ -52,7 +52,7 @@
       "Mail_iscritti.data[0].mail",
       "RichTextEditor1.text",
       "data_table.selectedRow.nome",
-      "function(){\n  var email = \"\";\n  for(let i=1; i < Mail_iscritti.data.length; i++)\n    {\n      email = email+Mail_iscritti.data[i].mail+\",\";\n    };\n  email = email.slice(0, -1);\nreturn email;\n}()"
+      "function(){  var email = \"\";  for(let i=1; i < Mail_iscritti.data.length; i++)    {      email = email+Mail_iscritti.data[i].mail+\",\";    };  email = email.slice(0, -1);return email;}()"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

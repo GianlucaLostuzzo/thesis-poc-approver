@@ -319,6 +319,9 @@
                         },
                         {
                           "key": "onSort"
+                        },
+                        {
+                          "key": "onRowSelected"
                         }
                       ],
                       "primaryColumns": {
@@ -556,6 +559,7 @@
                           "cellBackground": ""
                         }
                       },
+                      "onRowSelected": "{{Mail_iscritti.run()}}",
                       "key": "zba5qel0au",
                       "derivedColumns": {
                         "customColumn1": {
@@ -633,7 +637,7 @@
                   "boxShadow": "none",
                   "widgetName": "Canvas3",
                   "topRow": 0,
-                  "bottomRow": 350,
+                  "bottomRow": 360,
                   "parentRowSpace": 1,
                   "canExtend": true,
                   "type": "CANVAS_WIDGET",
@@ -657,8 +661,8 @@
                         "parent",
                         "group"
                       ],
-                      "topRow": 26,
-                      "bottomRow": 32,
+                      "topRow": 28,
+                      "bottomRow": 34,
                       "parentRowSpace": 10,
                       "type": "CONTAINER_WIDGET",
                       "hideCard": false,
@@ -852,7 +856,7 @@
                         "rte"
                       ],
                       "topRow": 13,
-                      "bottomRow": 25,
+                      "bottomRow": 27,
                       "parentRowSpace": 10,
                       "labelWidth": 5,
                       "type": "RICH_TEXT_EDITOR_WIDGET",
@@ -876,7 +880,7 @@
                       "key": "6yomqlj89e",
                       "isRequired": false,
                       "isDeprecated": false,
-                      "rightColumn": 61,
+                      "rightColumn": 63,
                       "isDefaultClickDisabled": true,
                       "widgetId": "lr3h5yehgh",
                       "isVisible": true,
