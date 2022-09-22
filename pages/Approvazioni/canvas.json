@@ -130,7 +130,7 @@
                               "resetFormOnClick": false,
                               "boxShadow": "none",
                               "widgetName": "Button1",
-                              "onClick": "{{ApprovaRichiesta.run(() => showAlert('Richiesta approvata!','success'), () => {});\nMailApprovazioneRichiesta.run();\nPendenti.run()}}",
+                              "onClick": "{{ApprovaRichiesta.run(() => showAlert('Richiesta approvata!','success'), () => {});\nMailApprovazioneRichiesta.run();\nPendenti.run();\nlocation.reload()}}",
                               "buttonColor": "#312e81",
                               "dynamicPropertyPathList": [
                                 {
