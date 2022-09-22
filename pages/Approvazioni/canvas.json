@@ -130,7 +130,7 @@
                               "resetFormOnClick": false,
                               "boxShadow": "none",
                               "widgetName": "Button1",
-                              "onClick": "{{ApprovaRichiesta.run(() => showAlert('Richiesta approvata!','success'), () => {});\nMailApprovazioneRichiesta.run();\nPendenti.run();\nPendenti.reload()}}",
+                              "onClick": "{{ApprovaRichiesta.run(() => showAlert('Richiesta approvata!','success'), () => {});\nMailApprovazioneRichiesta.run();\nPendenti.run()}}",
                               "buttonColor": "#312e81",
                               "dynamicPropertyPathList": [
                                 {
@@ -183,7 +183,7 @@
                               "resetFormOnClick": false,
                               "boxShadow": "none",
                               "widgetName": "Button2",
-                              "onClick": "{{RifiutaRichiesta.run(() => showAlert('Richiesta rifiutata','success'), () => {});\nMailRifiutoRichiesta.run();\nPendenti.run();\nlocation.reload()}}",
+                              "onClick": "{{RifiutaRichiesta.run(() => showAlert('Richiesta rifiutata','success'), () => {});\nMailRifiutoRichiesta.run();\nPendenti.run()}}",
                               "buttonColor": "#312e81",
                               "dynamicPropertyPathList": [
                                 {
