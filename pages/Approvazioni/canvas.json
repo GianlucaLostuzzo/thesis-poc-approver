@@ -183,7 +183,7 @@
                               "resetFormOnClick": false,
                               "boxShadow": "none",
                               "widgetName": "Button2",
-                              "onClick": "{{RifiutaRichiesta.run(() => showAlert('Richiesta rifiutata','success'), () => {});\nMailRifiutoRichiesta.run();\nPendenti.run()}}",
+                              "onClick": "{{RifiutaRichiesta.run(() => showAlert('Richiesta rifiutata','success'), () => {});\nMailRifiutoRichiesta.run();\nPendenti.run();\nlocation.reload()}}",
                               "buttonColor": "#312e81",
                               "dynamicPropertyPathList": [
                                 {
